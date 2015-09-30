@@ -587,11 +587,11 @@ nScriptIntrinsicBLAS_Single(JNIEnv *_env, jobject _this, jlong con, jlong incCon
     if (mUseInc) {
         dispatchTab.ContextFinish((RsContext)con);
         dispatchTabInc.ScriptForEachMulti((RsContext)incCon, (RsScript)id, 0,
-                                          in_allocs, sizeof(in_allocs), nullptr,
+                                          in_allocs, NELEM(in_allocs), nullptr,
                                           &call, sizeof(call), nullptr, 0);
     } else {
         dispatchTab.ScriptForEachMulti((RsContext)con, (RsScript)id, 0,
-                                       in_allocs, sizeof(in_allocs), nullptr,
+                                       in_allocs, NELEM(in_allocs), nullptr,
                                        &call, sizeof(call), nullptr, 0);
     }
 }
@@ -627,11 +627,11 @@ nScriptIntrinsicBLAS_Double(JNIEnv *_env, jobject _this, jlong con, jlong incCon
     if (mUseInc) {
         dispatchTab.ContextFinish((RsContext)con);
         dispatchTabInc.ScriptForEachMulti((RsContext)incCon, (RsScript)id, 0,
-                                          in_allocs, sizeof(in_allocs), nullptr,
+                                          in_allocs, NELEM(in_allocs), nullptr,
                                           &call, sizeof(call), nullptr, 0);
     } else {
         dispatchTab.ScriptForEachMulti((RsContext)con, (RsScript)id, 0,
-                                        in_allocs, sizeof(in_allocs), nullptr,
+                                        in_allocs, NELEM(in_allocs), nullptr,
                                         &call, sizeof(call), nullptr, 0);
     }
 }
@@ -670,11 +670,11 @@ nScriptIntrinsicBLAS_Complex(JNIEnv *_env, jobject _this, jlong con, jlong incCo
     if (mUseInc) {
         dispatchTab.ContextFinish((RsContext)con);
         dispatchTabInc.ScriptForEachMulti((RsContext)incCon, (RsScript)id, 0,
-                                          in_allocs, sizeof(in_allocs), nullptr,
+                                          in_allocs, NELEM(in_allocs), nullptr,
                                           &call, sizeof(call), nullptr, 0);
     } else {
         dispatchTab.ScriptForEachMulti((RsContext)con, (RsScript)id, 0,
-                                       in_allocs, sizeof(in_allocs), nullptr,
+                                       in_allocs, NELEM(in_allocs), nullptr,
                                        &call, sizeof(call), nullptr, 0);
     }
 }
@@ -713,11 +713,11 @@ nScriptIntrinsicBLAS_Z(JNIEnv *_env, jobject _this, jlong con, jlong incCon, jlo
     if (mUseInc) {
         dispatchTab.ContextFinish((RsContext)con);
         dispatchTabInc.ScriptForEachMulti((RsContext)incCon, (RsScript)id, 0,
-                                          in_allocs, sizeof(in_allocs), nullptr,
+                                          in_allocs, NELEM(in_allocs), nullptr,
                                           &call, sizeof(call), nullptr, 0);
     } else {
         dispatchTab.ScriptForEachMulti((RsContext)con, (RsScript)id, 0,
-                                        in_allocs, sizeof(in_allocs), nullptr,
+                                        in_allocs, NELEM(in_allocs), nullptr,
                                         &call, sizeof(call), nullptr, 0);
     }
 }
@@ -746,11 +746,11 @@ nScriptIntrinsicBLAS_BNNM(JNIEnv *_env, jobject _this, jlong con, jlong incCon, 
     if (mUseInc) {
         dispatchTab.ContextFinish((RsContext)con);
         dispatchTabInc.ScriptForEachMulti((RsContext)incCon, (RsScript)id, 0,
-                                          in_allocs, sizeof(in_allocs), nullptr,
+                                          in_allocs, NELEM(in_allocs), nullptr,
                                           &call, sizeof(call), nullptr, 0);
     } else {
         dispatchTab.ScriptForEachMulti((RsContext)con, (RsScript)id, 0,
-                                        in_allocs, sizeof(in_allocs), nullptr,
+                                        in_allocs, NELEM(in_allocs), nullptr,
                                         &call, sizeof(call), nullptr, 0);
     }
 }
